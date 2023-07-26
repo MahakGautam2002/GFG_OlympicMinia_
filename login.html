@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+   rel="stylesheet">
+
+   <link rel="icon" type="image/png" href="./assets/images/logo.png">
+
+   <title>OlympicMinia</title>
+
+   <!-- Bootstrap core CSS -->
+   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+   <!-- Additional CSS Files -->
+   <link rel="stylesheet" href="assets/css/fontawesome.css">
+   <link rel="stylesheet" href="assets/css/templatemo-OlympicMinia-gaming.css">
+   <link rel="stylesheet" href="assets/css/login.css">
+   <link rel="stylesheet" href="assets/css/owl.css">
+   <link rel="stylesheet" href="assets/css/animate.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   <!--
+
+TemplateMo 579 OlympicMinia Gaming
+
+https://templatemo.com/tm-579-OlympicMinia-gaming
+
+-->
+</head>
+
+<body>
+
+
+   <!-- ***** Header Area Start ***** -->
+   <header class="header-area header-sticky">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <nav class="main-nav">
+                  <!-- ***** Logo Start ***** -->
+                  <a href="index.html" class="logo">
+                     <img src="assets/images/logo.png" alt="">
+                  </a>
+                  <!-- ***** Logo End ***** -->
+                  <!-- ***** Search End ***** -->
+                  <div class="search-input">
+                     <form id="search" action="#">
+                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword"
+                           onkeypress="handle" />
+                        <i class="fa fa-search"></i>
+                     </form>
+                  </div>
+                  <!-- ***** Search End ***** -->
+                  <!-- ***** Menu Start ***** -->
+                  <ul class="nav">
+                     <li><a href="index.html" class="active">Home</a></li>
+                     <li><a href="browser.html">Country</a></li>
+                     <li><a href="details.html">LeaderBoard</a></li>
+                     <li><a href="streams.html">Live Chat</a></li>
+                     <li><a href="profile.html">FanID <img src="assets/images/profile-header.jpg" alt=""></a></li>
+                  </ul>
+                  <a class='menu-trigger'>
+                     <span>Menu</span>
+                  </a>
+                  <!-- ***** Menu End ***** -->
+               </nav>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- ***** Header Area End ***** -->
+
+
+
+   <div class="wrapper">
+      <div class="title-text">
+         <div class="title login">
+            Login Form
+         </div>
+         <div class="title signup">
+            Signup Form
+         </div>
+      </div>
+      <div class="form-container">
+         <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+         </div>
+         <div class="form-inner">
+            <form action="profile.html" class="login">
+               <div class="field">
+                  <input type="text" placeholder="Email Address" required>
+               </div>
+               <div class="field">
+                  <input type="password" placeholder="Password" required>
+               </div>
+               <div class="pass-link">
+                  <a href="#">Forgot password?</a>
+               </div>
+
+               <div class="field btn">
+                  <div class="btn-layer"></div>
+                  <input type="submit" value="Login">
+               </div>
+
+               <div class="signup-link">
+                  Not a member? <a href="">Signup now</a>
+               </div>
+            </form>
+            <form action="profile.html" class="signup">
+               <div class="field">
+                  <input type="text" placeholder="Email Address" required>
+               </div>
+               <div class="field">
+                  <input type="password" placeholder="Password" required>
+               </div>
+               <div class="field">
+                  <input type="password" placeholder="Confirm password" required>
+               </div>
+
+               <div class="field btn">
+                  <div class="btn-layer"></div>
+                  <input type="submit" value="Signup">
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+   <script>
+      const loginText = document.querySelector(".title-text .login");
+      const loginForm = document.querySelector("form.login");
+      const loginBtn = document.querySelector("label.login");
+      const signupBtn = document.querySelector("label.signup");
+      const signupLink = document.querySelector("form .signup-link a");
+      signupBtn.onclick = (() => {
+         loginForm.style.marginLeft = "-50%";
+         loginText.style.marginLeft = "-50%";
+      });
+      loginBtn.onclick = (() => {
+         loginForm.style.marginLeft = "0%";
+         loginText.style.marginLeft = "0%";
+      });
+      signupLink.onclick = (() => {
+         signupBtn.click();
+         return false;
+      });
+   </script>
+</body>
+
+</html>
