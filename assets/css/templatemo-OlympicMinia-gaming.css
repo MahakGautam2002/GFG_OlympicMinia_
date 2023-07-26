@@ -975,6 +975,9 @@ Featured Games Style
 .featured-games .item .thumb {
   position: relative;
   overflow: hidden;
+  height: 250px;
+  width: 200px;
+  object-fit:scale-down;
 }
 
 .featured-games .item .thumb .hover-effect {
