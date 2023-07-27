@@ -780,6 +780,7 @@ Banner Style
   min-height: 380px;
   border-radius: 23px;
   padding: 80px 60px;
+  opacity: 80%;
 }
 
 .main-banner h6 {
@@ -1196,6 +1197,7 @@ Live Stream Style
 
 .live-stream .thumb img {
   border-radius: 23px; 
+  height: 100%;
 }
 
 .live-stream .thumb:hover .hover-effect {
@@ -1242,6 +1244,7 @@ Live Stream Style
 
 .live-stream .avatar img {
   margin-right: 15px;
+  height: 100%;
 }
 
 .live-stream span i {
