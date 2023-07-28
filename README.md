@@ -1,1 +1,1 @@
-# GFG_OlympicMinia_
+# GFG_OlympicMania_
