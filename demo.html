@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multi-Select Dropdown Example</title>
+</head>
+<body>
+  <h1>Select Options:</h1>
+  <select id="dropdownList" multiple>
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+    <option value="option4">Option 4</option>
+  </select>
+
+  <div id="cardContainer"></div>
+
+  <script>
+    const dropdownList = document.getElementById('dropdownList');
+    const cardContainer = document.getElementById('cardContainer');
+
+    // Check if previously selected options are stored in localStorage
+    const storedOptions = localStorage.getItem('selectedOptions');
+    if (storedOptions) {
+      const selectedValues = storedOptions.split(',');
+      for (const value of selectedValues) {
+        const option = dropdownList.querySelector(`option[value="${value}"]`);
+        if (option) option.selected = true;
+      }
+      updateSelectedOptions();
+    }
+
+    // Add event listener to update selected options and save them to localStorage
+    dropdownList.addEventListener('change', () => {
+      updateSelectedOptions();
+      const selectedValues = Array.from(dropdownList.selectedOptions, option => option.value);
+      localStorage.setItem('selectedOptions', selectedValues.join(','));
+    });
+
+    // Function to update the displayed selected options as cards
+    function updateSelectedOptions() {
+      const selectedValues = Array.from(dropdownList.selectedOptions, option => option.value);
+
+      // Clear the existing card container
+      cardContainer.innerHTML = '';
+
+      // Create and display cards for the selected options
+      for (const value of selectedValues) {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.textContent = value;
+        cardContainer.appendChild(card);
+      }
+    }
+  </script>
+
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 8px;
+      margin: 4px;
+      display: inline-block;
+    }
+  </style>
+</body>
+</html>
