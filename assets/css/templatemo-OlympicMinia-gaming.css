@@ -775,7 +775,8 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
+  /* background-image: url(../images/logo.gif); */
+  background-image: url(../images/banner-bg.gif);
   background-position: center center;
   background-size: cover;
   min-height: 380px;
