@@ -83,6 +83,7 @@
         </div>
     </header>
 
+
     <!-- ***** Header Area End ***** -->
     <br><br>
     <div class="container">
@@ -162,11 +163,9 @@
                     <a href="player_submit.html">Submit Player</a>
                 </div>
             </div>
-            
+
             <!-- ***** Most Popular End ***** -->
         </div>
-    </div>
-
     </div>
 
 
@@ -184,21 +183,21 @@
     <script>
         const toggleButton = document.getElementById('toggleButton');
         const fruitsDropdown = document.getElementById('dropdownList');
-    
+
         // Hide the dropdown initially
         fruitsDropdown.style.display = 'none';
-    
+
         // Add event listener to toggle the visibility of the dropdown
         toggleButton.addEventListener('click', () => {
-          if (fruitsDropdown.style.display === 'none') {
-            fruitsDropdown.style.display = 'block';
-            toggleButton.textContent = 'Hide Players';
-          } else {
-            fruitsDropdown.style.display = 'none';
-            toggleButton.textContent = 'Show Players';
-          }
+            if (fruitsDropdown.style.display === 'none') {
+                fruitsDropdown.style.display = 'block';
+                toggleButton.textContent = 'Hide Players';
+            } else {
+                fruitsDropdown.style.display = 'none';
+                toggleButton.textContent = 'Show Players';
+            }
         });
-      </script>
+    </script>
     <script>
         const dropdownList = document.getElementById('dropdownList');
         const cardContainer = document.getElementById('cardContainer');
