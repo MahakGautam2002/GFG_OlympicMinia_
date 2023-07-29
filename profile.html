@@ -113,7 +113,7 @@ https://templatemo.com/tm-579-OlympicMinia-gaming
                     <ul>
                       <li>Games Played <span>3</span></li>
                       <li>Friends Online <span>16</span></li>
-                      <li>OlympicMinia Score <span>****</span></li>
+                      <li>OlympicMinia Score <span id="score"></span></li>
                       <li>Intrested Game <span>Swimming</span></li>
                     </ul>
                   </div>
@@ -131,7 +131,7 @@ https://templatemo.com/tm-579-OlympicMinia-gaming
                           <div class="item">
                             <div class="thumb">
                               <img src="assets/images/clip-01.jpg" alt="" style="border-radius: 23px;">
-                              <a href="#" target="_blank"><i class="fa fa-play"></i></a>
+                              <a href="https://www.britannica.com/quiz/the-olympic-games" target="_blank"><i class="fa fa-play"></i></a>
                             </div>
                             <div class="down-content">
                               <h4>Quizathon</h4>
@@ -143,7 +143,7 @@ https://templatemo.com/tm-579-OlympicMinia-gaming
                           <div class="item">
                             <div class="thumb">
                               <img src="assets/images/clip-02.jpg" alt="" style="border-radius: 23px;">
-                              <a href="#" target="_blank"><i class="fa fa-play"></i></a>
+                              <a href="https://wordwall.net/resource/6244160/olympic-sports-memory-card-game" target="_blank"><i class="fa fa-play"></i></a>
                             </div>
                             <div class="down-content">
                               <h4>Simi-Cards</h4>
@@ -183,58 +183,6 @@ https://templatemo.com/tm-579-OlympicMinia-gaming
                       </div>
                     </div>
                   </div>
-                
-                
-                  <div class="col-lg-4">
-                    <div class="top-streamers">
-                      <div class="heading-section">
-                        <h4><em>Top</em> Users</h4>
-                      </div>
-                      <ul>
-                        <li>
-                          <span>01</span>
-                          <img src="assets/images/user01.jpg" alt="" style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
-                          <h6><i class="fa fa-check"></i> LahutaM</h6>
-                          <div class="main-button">
-                            <a href="#">Follow</a>
-                          </div>
-                        </li>
-                        <li>
-                          <span>02</span>
-                          <img src="assets/images/user03.jpg" alt="" style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
-                          <h6><i class="fa fa-check"></i> Kengan</h6>
-                          <div class="main-button">
-                            <a href="#">Follow</a>
-                          </div>
-                        </li>
-                        <li>
-                          <span>03</span>
-                          <img src="assets/images/user02.jpg" alt="" style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
-                          <h6><i class="fa fa-check"></i> Areluwa</h6>
-                          <div class="main-button">
-                            <a href="#">Follow</a>
-                          </div>
-                        </li>
-                        <!-- <li>
-                          <span>04</span>
-                          <img src="assets/images/avatar-04.jpg" alt="" style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
-                          <h6><i class="fa fa-check"></i> Omeg</h6>
-                          <div class="main-button">
-                            <a href="#">Follow</a>
-                          </div>
-                        </li>
-                        <li>
-                          <span>05</span>
-                          <img src="assets/images/avatar-01.jpg" alt="" style="max-width: 46px; border-radius: 50%; margin-right: 15px;">
-                          <h6><i class="fa fa-check"></i> GangTeam</h6>
-                          <div class="main-button">
-                            <a href="#">Follow</a>
-                          </div>
-                        </li> -->
-                      </ul>
-                    </div>
-                  </div>
-                
               </div>
             </div>
           </div>
@@ -251,10 +199,11 @@ https://templatemo.com/tm-579-OlympicMinia-gaming
                   <li><img src="assets/images/user01.jpg" alt="" class="templatemo-item"></li>
                   <li><h4>Mahak Gautam</h4><span>India</span></li>
                   <li><h4>Friend Online</h4><span>150</span></li>
-                  <li><h4>OlympicMinia Score</h4><span>850*</span></li>
+                  <li><h4>OlympicMinia Score</h4><span id="score">850*</span></li>
                   <li><h4>Streak</h4><span>25 Days</span> </li>
-                  <li><div class="main-border-button "><a href="#">View Profile</a></div></li>
+                  <li><div class="main-border-button "><a href="profile2.html">View Profile</a></div></li>
                 </ul>
+            
               </div>
               <div class="item">
                 <ul>
@@ -296,7 +245,28 @@ https://templatemo.com/tm-579-OlympicMinia-gaming
   </footer>
 
 
-  <!-- Scripts -->
+
+<script>
+  // Function to generate a random number between min (inclusive) and max (inclusive)
+  function generateRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  // Function to display the random number in the HTML page
+  function displayRandomNumber() {
+    const min = 50; // Minimum value for the random number
+    const max = 1000; // Maximum value for the random number
+
+    const randomNumber = generateRandomNumber(min, max);
+
+    const randomNumberDisplay = document.getElementById('score');
+    randomNumberDisplay.textContent = randomNumber;
+  }
+
+  // Trigger the random number generation when the page finishes loading
+  window.onload = displayRandomNumber;
+</script>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
