@@ -306,12 +306,15 @@
 
             // Check if previously selected options are stored in localStorage
             const storedOptions = localStorage.getItem('selectedOptions');
+
             if (storedOptions) {
                 const selectedValues = storedOptions.split(',');
                 for (const value of selectedValues) {
                     const option = dropdownList.querySelector(`athlete_full_name[value="${value}"]`);
                     if (option) option.selected = true;
+                    
                 }
+  
                 updateSelectedOptions();
             }
 
@@ -356,11 +359,11 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/popup.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/isotope.min.js" defer></script>
+    <script src="assets/js/owl-carousel.js" defer></script>
+    <script src="assets/js/tabs.js" defer></script>
+    <script src="assets/js/popup.js" defer></script>
+    <script src="assets/js/custom.js" defer></script>
 
 
 </body>
