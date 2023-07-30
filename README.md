@@ -35,8 +35,6 @@ Fan Engagement over same application to play and compete over world. <br/>
 Chance to make your own team and win the Rewards. <br/>
 User/Fan can get latest updates/News, player profile, country profile, game statistics and gamafication mode in a single application.<br/>
 
-## TechStack Used :
-html, css, JS, bootstrap, json, colab, python ,ml, visulization, front-end, back-end, data science
 
 ### Live Website Link : https://mahakgautam2002.github.io/GFG_OlympicMinia_/
 ![Screenshot (637)](https://github.com/MahakGautam2002/GFG_OlympicMinia_/assets/87615347/3ab277d5-ae79-41c5-83d7-6d99ecd54089)
