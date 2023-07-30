@@ -38,3 +38,7 @@ User/Fan can get latest updates/News, player profile, country profile, game stat
 
 ### Live Website Link : https://mahakgautam2002.github.io/GFG_OlympicMinia_/
 ![Screenshot (637)](https://github.com/MahakGautam2002/GFG_OlympicMinia_/assets/87615347/3ab277d5-ae79-41c5-83d7-6d99ecd54089)
+
+## Contributor : <br/>
+1. Mahak Gautam
+2. Vivek Kute
